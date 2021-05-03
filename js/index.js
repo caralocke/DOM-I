@@ -40,3 +40,13 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Create selectors to point your data into elements
+const header = document.querySelector('header');
+const logoImage = document.querySelector('#logo-img');
+const ctaText = document.querySelector('h1');
+const links = document.querySelectorAll('nav a');
+
+
+//Using your selectors, update the content to match the example file.
+
