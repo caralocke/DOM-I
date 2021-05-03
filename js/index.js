@@ -43,10 +43,47 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Create selectors to point your data into elements
 const header = document.querySelector('header');
+const links = document.querySelectorAll('nav a');
 const logoImage = document.querySelector('#logo-img');
 const ctaText = document.querySelector('h1');
-const links = document.querySelectorAll('nav a');
+const ctaButton = document.querySelector('button');
+const ctaImage = document.querySelector('.cta-img');
+const servicesLink = document.createElement('a');
+const productLink = document.createElement('a');
+const visionLink = document.createElement('a');
+const featuresLink = document.createElement('a');
+const aboutLink = document.createElement('a');
+const contactLink = document.createElement('a');
 
 
 //Using your selectors, update the content to match the example file.
+ctaText.textContent = `DOM Is Awesome`;
+ctaText.style = 'black';
+ctaButton.textContent = "Get Started";
+servicesLink.textContent = 'Services';
+servicesLink.href = '#';
+document.querySelector('nav').appendChild(servicesLink);
+console.log(servicesLink);
+productLink.textContent = 'Product';
+productLink.href = '#';
+document.querySelector('nav').appendChild(productLink);
+visionLink.textContent = 'Vision';
+visionLink.href = '#';
+document.querySelector('nav').appendChild(visionLink);
+featuresLink.textContent = 'Features';
+featuresLink.href = '#';
+document.querySelector('nav').appendChild(featuresLink);
+aboutLink.textContent = 'About';
+aboutLink.href = '#';
+document.querySelector('nav').appendChild(aboutLink);
+contactLink.textContent = 'Contact';
+contactLink.href = '#';
+document.querySelector('nav').appendChild(contactLink);
 
+
+//Remember to update the src attributes on images
+ctaImage.src = 'img/header-img.png';
+
+//Change the color of the navigation text to be green.
+links.style.fontColor = 'green'
+//Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
