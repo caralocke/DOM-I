@@ -40,3 +40,33 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Create selectors by using any of the DOM element's methods
+const container = document.querySelector('.container')
+const header = document.querySelector('header');
+let links = document.querySelectorAll('nav a');
+const logoImage = document.querySelector('#logo-img');
+const topContent = document.querySelector('.top-content:nth-of-type(1)'); 
+const titleTopContent = topContent.querySelector('h4');
+const h1Text = document.querySelector('h1');
+const button = document.querySelector('button');
+const image = document.querySelector('#cta-img');
+const servicesLink = document.createElement('a');
+const productLink = document.createElement('a');
+const visionLink = document.createElement('a');
+const featuresLink = document.createElement('a');
+const aboutLink = document.createElement('a');
+const contactLink = document.createElement('a');
+const featuresTitle = document.createElement('h4');
+const featuresInfo = document.createElement('p');
+const aboutTitle = document.createElement('h4');
+const aboutInfo = document.createElement('p');
+const middleImage = document.querySelector('#middle-img');
+const bottomContent = document.querySelector('#bottom-content');
+const servicesTitle = document.createElement('h4');
+const servicesInfo = document.createElement('p');
+const productTitle = document.createElement('h4');
+const productInfo = document.createElement('p');
+const visionTitle = document.createElement('h4');
+const visionInfo = document.createElement('p');
+const contactInfo = document.querySelector('#contact');
