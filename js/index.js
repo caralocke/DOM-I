@@ -40,3 +40,76 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Create selectors by using any of the DOM element's methods
+const container = document.querySelector('.container')
+const header = document.querySelector('header');
+let links = document.querySelectorAll('nav a');
+const logoImage = document.querySelector('#logo-img');
+const topContent = document.querySelector('.top-content'); 
+const titleTopContent = topContent.querySelector('h4');
+const h1Text = document.querySelector('h1');
+const button = document.querySelector('button');
+const ctaImage = document.querySelector('#cta-img');
+const servicesLink = document.createElement('a');
+const productLink = document.createElement('a');
+const visionLink = document.createElement('a');
+const featuresLink = document.createElement('a');
+const aboutLink = document.createElement('a');
+const contactLink = document.createElement('a');
+const featuresTitle = document.createElement('h4');
+const featuresInfo = document.createElement('p');
+const aboutTitle = document.createElement('h4');
+const aboutInfo = document.createElement('p');
+const middleImage = document.querySelector('#middle-img');
+const mainContent = document.querySelector('.main-content')
+const bottomContent = document.querySelector('#bottom-content');
+const servicesTitle = document.createElement('h4');
+const servicesInfo = document.createElement('p');
+const productTitle = document.createElement('h4');
+const productInfo = document.createElement('p');
+const visionTitle = document.createElement('h4');
+const visionInfo = document.createElement('p');
+const contactInfo = document.querySelector('#contact');
+
+//Note that IDs have been used on all images. Use the IDs to update src path content
+ctaImage.src = 'img/header-img.png'
+middleImage.src ='img/mid-page-accent.jpg'
+
+// Using your selectors, update the content to match the example file.
+h1Text.textContent = 'DOM IS AWESOME'
+button.textContent = 'Get Started'
+
+servicesLink.textContent = 'Services'
+servicesLink.href = '#'
+document.querySelector('nav').appendChild(servicesLink)
+productLink.textContent = 'Product'
+productLink.href = '#'
+document.querySelector('nav').appendChild(productLink)
+document.querySelector('nav').appendChild(productLink)
+visionLink.textContent = 'Vision'
+visionLink.href = '#'
+document.querySelector('nav').appendChild(visionLink)
+featuresLink.textContent = 'Features'
+featuresLink.href = '#'
+document.querySelector('nav').appendChild(featuresLink)
+aboutLink.textContent = 'About'
+aboutLink.href = '#'
+document.querySelector('nav').appendChild(aboutLink)
+contactLink.textContent = 'Contact'
+contactLink.href = '#'
+document.querySelector('nav').appendChild(contactLink)
+featuresTitle.textContent = 'FEATURES'
+document.querySelector('h4').appendChild(featuresTitle)
+featuresInfo.textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`
+document.querySelector('p').appendChild(featuresInfo)
+aboutTitle.textContent = "ABOUT"
+document.querySelector('h4').appendChild(aboutTitle)
+aboutInfo.textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
+interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.`
+document.querySelector('p').appendChild(aboutInfo)
+servicesTitle.textContent = "SERVICES"
+document.querySelector('h4').appendChild(servicesTitle)
