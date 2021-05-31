@@ -50,7 +50,7 @@ const topContent = document.querySelector('.top-content:nth-of-type(1)');
 const titleTopContent = topContent.querySelector('h4');
 const h1Text = document.querySelector('h1');
 const button = document.querySelector('button');
-const image = document.querySelector('#cta-img');
+const ctaImage = document.querySelector('#cta-img');
 const servicesLink = document.createElement('a');
 const productLink = document.createElement('a');
 const visionLink = document.createElement('a');
@@ -70,3 +70,7 @@ const productInfo = document.createElement('p');
 const visionTitle = document.createElement('h4');
 const visionInfo = document.createElement('p');
 const contactInfo = document.querySelector('#contact');
+
+//Note that IDs have been used on all images. Use the IDs to update src path content
+ctaImage.src = 'img/header-img.png'
+middleImage.src ='img/mid-page-accent.jpg'
